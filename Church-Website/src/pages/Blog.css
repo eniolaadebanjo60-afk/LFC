@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+blog-page {
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  overflow-x: hidden;
+}
+ 
+.blog-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #E32636;
+  margin-bottom: 12px;
+}
+ 
+.post-body {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+  animation: fadeSlideUp 0.5s ease both;
+}
+
+.post-body p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+.blog-hero {
+  background: #111;
+  padding: 110px 60px 80px;
+  position: relative;
+  overflow: hidden;
+}
+ 
+.blog-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  width: 80px;
+  height: 5px;
+  background: #E32636;
+  border-radius: 3px;
+}
+ 
+.blog-hero-inner {
+  max-width: 650px;
+  animation: fadeSlideUp 1s ease both;
+}
+ 
+.blog-hero-inner h1 {
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+ 
+.blog-hero-inner p {
+  color: #aaa;
+  font-size: 17px;
+  line-height: 1.7;
+}
+ 
+.blog-featured {
+  background: #fff;
+  padding: 80px 60px;
+}
+ 
+.featured-inner {
+  display: flex;
+  gap: 60px;
+  align-items: stretch;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  animation: fadeSlideUp 1s ease both;
+}
+ 
+.featured-image {
+  flex: 1;
+  min-width: 280px;
+  position: relative;
+  min-height: 360px;
+}
+ 
+.featured-image-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.featured-image-placeholder span {
+  color: #444;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+ 
+.featured-category {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #E32636;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+ 
+.featured-content {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.featured-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #111;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+ 
+.featured-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.85;
+  margin-bottom: 24px;
+}
+ 
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+ 
+.meta-dot {
+  color: #E32636;
+}
+ 
+.blog-btn {
+  background: #E32636;
+  color: #fff;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  align-self: flex-start;
+}
+ 
+.blog-btn:hover {
+  background: #B71C2A;
+}
+ 
+.blog-grid-section {
+  background: #F5F5F5;
+  padding: 80px 60px;
+}
+ 
+.blog-grid-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+ 
+.blog-grid-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #111;
+}
+ 
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+ 
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  animation: fadeSlideUp 0.8s ease both;
+}
+ 
+.blog-card:hover {
+  transform: translateY(-6px);
+}
+ 
+.card-image-placeholder {
+  width: 100%;
+  height: 180px;
+  background: #111;
+  position: relative;
+}
+ 
+.card-image-placeholder::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #E32636;
+}
+ 
+.card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+ 
+.card-category {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #E32636;
+  margin-bottom: 10px;
+}
+ 
+.card-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  color: #111;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+ 
+.card-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  flex: 1;
+}
+ 
+.card-content .post-meta {
+  margin-bottom: 16px;
+}
+ 
+.card-read-btn {
+  background: transparent;
+  color: #E32636;
+  border: 1.5px solid #E32636;
+  padding: 9px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+}
+ 
+.card-read-btn:hover {
+  background: #E32636;
+  color: #fff;
+}
+ 
+.blog-cta {
+  background: #111;
+  padding: 90px 60px;
+  text-align: center;
+  animation: fadeSlideUp 1s ease both;
+}
+ 
+.blog-cta h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+ 
+.blog-cta p {
+  color: #aaa;
+  font-size: 17px;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+ 
+.blog-btn-white {
+  background: #fff;
+  color: #111;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+ 
+.blog-btn-white:hover {
+  opacity: 0.88;
+}
+ 
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(60px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+ 
+@media (max-width: 768px) {
+  .blog-hero { padding: 80px 24px 60px; }
+  .blog-hero-inner h1 { font-size: 34px; }
+  .blog-featured { padding: 60px 24px; }
+  .featured-inner { flex-direction: column; gap: 30px; }
+  .featured-image { min-height: 240px; }
+  .featured-image-placeholder { min-height: 240px; }
+  .featured-content h2 { font-size: 24px; }
+  .blog-grid-section { padding: 60px 24px; }
+  .blog-grid { grid-template-columns: 1fr; }
+  .blog-cta { padding: 60px 24px; }
+  .blog-cta h2 { font-size: 28px; }
+}
+ 

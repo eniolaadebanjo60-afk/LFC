@@ -318,9 +318,4 @@
   to   { opacity: 1; transform: translateY(0); }
 }
  
-@media (max-width: 768px) {
-  .admin-header { padding: 24px; }
-  .admin-section { margin: 24px 16px 0; padding: 24px 20px; }
-  .form-row { flex-direction: column; }
-}
  

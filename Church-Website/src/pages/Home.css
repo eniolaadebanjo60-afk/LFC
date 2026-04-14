@@ -6,7 +6,6 @@
 }
 .home {
   color: #111;
-  overflow-x: hidden;
 }
  
 .section {
@@ -319,7 +318,7 @@
  
 .testimony-card p {
   font-size: 15px;
-  color: #ccc;
+  color: #000;
   line-height: 1.8;
   margin-bottom: 16px;
   font-style: italic;
@@ -385,17 +384,4 @@
     opacity: 1;
     transform: translateX(0);
   }
-}
-
- 
-@media (max-width: 768px) {
-  .hero h1 { font-size: 34px; }
-  .hero { min-height: 80vh; padding: 50px 24px; }
-  .section { padding: 60px 24px; }
-  .section h2 { font-size: 28px; }
-  .about-content { flex-direction: column; gap: 30px; }
-  .about-image-wrap img { height: 240px; }
-  .about-text h2 { font-size: 26px; }
-  .cta h2 { font-size: 28px; }
-  .testimony-card { max-width: 100%; }
 }

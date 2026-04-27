@@ -1,3 +1,4 @@
+
 .admin-login {
   min-height: 100vh;
   background: #111;
@@ -5,7 +6,7 @@
   align-items: center;
   justify-content: center;
 }
- 
+
 .login-box {
   background: #1a1a1a;
   border: 1px solid #2a2a2a;
@@ -17,7 +18,7 @@
   text-align: center;
   animation: fadeSlideUp 0.8s ease both;
 }
- 
+
 .login-logo {
   width: 56px;
   height: 56px;
@@ -31,19 +32,19 @@
   justify-content: center;
   margin: 0 auto 20px;
 }
- 
+
 .login-box h2 {
   color: #fff;
   font-size: 26px;
   margin-bottom: 8px;
 }
- 
+
 .login-box p {
   color: #aaa;
   font-size: 14px;
   margin-bottom: 28px;
 }
- 
+
 .login-box input {
   width: 100%;
   background: #111;
@@ -56,22 +57,17 @@
   outline: none;
   transition: border-color 0.2s;
 }
- 
-.login-box input:focus {
-  border-color: #E32636;
-}
- 
-.input-error {
-  border-color: #E32636 !important;
-}
- 
+
+.login-box input:focus { border-color: #E32636; }
+.input-error { border-color: #E32636 !important; }
+
 .error-msg {
   display: block;
   color: #E32636;
   font-size: 13px;
   margin-bottom: 12px;
 }
- 
+
 .login-box button {
   width: 100%;
   background: #E32636;
@@ -80,24 +76,20 @@
   padding: 13px;
   border-radius: 6px;
   font-size: 15px;
-  font-family: 'Inter', sans-serif;
   font-weight: 500;
   cursor: pointer;
   margin-top: 8px;
   transition: background 0.2s;
 }
- 
-.login-box button:hover {
-  background: #B71C2A;
-}
- 
+
+.login-box button:hover { background: #B71C2A; }
+
 .admin-page {
-  font-family: 'Inter', sans-serif;
   background: #F5F5F5;
   min-height: 100vh;
-  padding: 0 0 80px;
+  padding-bottom: 80px;
 }
- 
+
 .admin-header {
   background: #111;
   padding: 30px 60px;
@@ -107,7 +99,7 @@
   flex-wrap: wrap;
   gap: 16px;
 }
- 
+
 .admin-label {
   display: block;
   font-size: 11px;
@@ -117,14 +109,13 @@
   color: #E32636;
   margin-bottom: 6px;
 }
- 
+
 .admin-header h1 {
-  font-family: 'Playfair Display', serif;
   color: #fff;
   font-size: 30px;
   margin: 0;
 }
- 
+
 .admin-logout {
   background: transparent;
   color: #aaa;
@@ -132,24 +123,59 @@
   padding: 9px 20px;
   border-radius: 6px;
   font-size: 13px;
-  font-family: 'Inter', sans-serif;
   cursor: pointer;
   transition: all 0.2s;
 }
- 
+
 .admin-logout:hover {
   border-color: #E32636;
   color: #E32636;
 }
- 
+
+.admin-tabs {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  gap: 0;
+  padding: 0 60px;
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 18px 28px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tab-btn:hover {
+  color: #111;
+}
+
+.tab-btn.active {
+  color: #E32636;
+  border-bottom-color: #E32636;
+}
+
+.tab-content {
+  animation: fadeSlideUp 0.4s ease both;
+}
+
 .admin-section {
   background: #fff;
   border-radius: 12px;
   padding: 40px;
-  margin: 40px 60px 0;
+  margin: 32px 60px 0;
   border: 1px solid #eee;
 }
- 
+
 .admin-section h2 {
   font-size: 24px;
   color: #111;
@@ -157,19 +183,19 @@
   padding-bottom: 16px;
   border-bottom: 1px solid #eee;
 }
- 
+
 .admin-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
- 
+
 .form-row {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
- 
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -177,18 +203,18 @@
   flex: 1;
   min-width: 200px;
 }
- 
+
 .form-group label {
   font-size: 13px;
   font-weight: 600;
   color: #333;
 }
- 
+
 .form-group label span {
   font-weight: 400;
   color: #999;
 }
- 
+
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -201,32 +227,32 @@
   transition: border-color 0.2s;
   resize: vertical;
 }
- 
+
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: #E32636;
 }
- 
+
 .form-check {
   display: flex;
   align-items: center;
   gap: 10px;
 }
- 
+
 .form-check input {
   width: 16px;
   height: 16px;
   accent-color: #E32636;
   cursor: pointer;
 }
- 
+
 .form-check label {
   font-size: 14px;
   color: #333;
   cursor: pointer;
 }
- 
+
 .success-msg {
   background: #e6f4ea;
   color: #2d7a3a;
@@ -236,7 +262,7 @@
   font-size: 14px;
   font-weight: 500;
 }
- 
+
 .admin-submit {
   background: #E32636;
   color: #fff;
@@ -249,17 +275,15 @@
   align-self: flex-start;
   transition: background 0.2s;
 }
- 
-.admin-submit:hover {
-  background: #B71C2A;
-}
- 
+
+.admin-submit:hover { background: #B71C2A; }
+
 .admin-posts-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
- 
+
 .admin-post-item {
   display: flex;
   align-items: center;
@@ -270,19 +294,19 @@
   gap: 16px;
   flex-wrap: wrap;
 }
- 
+
 .admin-post-info h3 {
   font-size: 15px;
   color: #111;
   margin-bottom: 4px;
   font-weight: 500;
 }
- 
+
 .admin-post-info p {
   font-size: 12px;
   color: #999;
 }
- 
+
 .featured-badge {
   display: inline-block;
   background: #E32636;
@@ -295,7 +319,7 @@
   border-radius: 20px;
   margin-bottom: 6px;
 }
- 
+
 .delete-btn {
   background: transparent;
   color: #E32636;
@@ -307,15 +331,87 @@
   transition: all 0.2s;
   white-space: nowrap;
 }
- 
+
 .delete-btn:hover {
   background: #E32636;
   color: #fff;
 }
- 
+
+.empty-msg {
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.video-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.video-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  background: #F5F5F5;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.video-thumb {
+  width: 140px;
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #ddd;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #999;
+  background: #ddd;
+}
+
+.video-info {
+  flex: 1;
+  min-width: 180px;
+}
+
+.video-info h3 {
+  font-size: 15px;
+  color: #111;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.video-info p {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 2px;
+}
+
+.video-desc {
+  font-size: 13px !important;
+  color: #666 !important;
+  margin-top: 4px !important;
+}
+
 @keyframes fadeSlideUp {
-  from { opacity: 0; transform: translateY(40px); }
+  from { opacity: 0; transform: translateY(30px); }
   to   { opacity: 1; transform: translateY(0); }
 }
- 
- 
+

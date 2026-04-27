@@ -94,10 +94,11 @@
 .hero-tag{
   font-size: 30px;
   font-weight: 800;
+  color: #fff;
 }
 
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero bg.jpg');
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('church.jpg');
   background-position: center;
   background-size: cover;
   min-height: 92vh;
@@ -114,7 +115,9 @@
   max-width: 700px;
   animation: fadeSlideUp 1s ease forwards;
 }
- 
+.hero-inner h1 span{
+  color: #E32636;
+}
 .hero .section-label {
   color: #E32636;
   margin-bottom: 20px;

@@ -1,15 +1,14 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
-import aboutImg from './about.jpg'
+import aboutImg from './mychurch.jpg'
  
 function Home() {
   return (
     <div className="home">
- 
       <section className="hero">
         <div className="hero-inner">
           <span className="hero-tag">Welcome to Our Church</span>
-          <h1>Living Faith Church<br />Orimerunmu</h1>
+          <h1>Living Faith Church <span><br />Orimerunmu</span> </h1>
           <p>A Place of Open Doors and Divine Opportunities</p>
           <div className="hero-buttons">
             <Link to='/about'>

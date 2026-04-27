@@ -2,9 +2,12 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <div className="footer">
       © {new Date().getFullYear()} Living Faith Church 
-    </footer>
+      <div className="icons">
+        
+      </div>
+    </div>
   )
 }
 

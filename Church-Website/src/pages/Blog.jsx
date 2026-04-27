@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Blog.css';
 import defaultPosts from './posts';
+import preacherImg from './preacher.jpg'
  
 function Blog() {
   const [posts, setPosts] = useState([]);

@@ -70,8 +70,8 @@ function Contact() {
                 <div className="info-block-icon">🕐</div>
                 <div>
                   <strong>Service Times</strong>
-                  <p>Sunday Service — 9:00 AM</p>
-                  <p>Midweek Service — Wednesday 6:00 PM</p>
+                  <p>Sunday Service — 8:00 AM</p>
+                  <p>Midweek Service — Wednesday 5:30 PM</p>
                 </div>
               </div>
  
@@ -187,12 +187,12 @@ function Contact() {
         <div className="strip-grid">
           <div className="strip-item">
             <strong>Sunday Service</strong>
-            <span>9:00 AM</span>
+            <span>8:00 AM</span>
           </div>
           <div className="strip-divider"></div>
           <div className="strip-item">
             <strong>Midweek Service</strong>
-            <span>Wednesday 6:00 PM</span>
+            <span>Wednesday 5:30 PM</span>
           </div>
           <div className="strip-divider"></div>
           <div className="strip-item">

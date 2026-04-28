@@ -388,3 +388,68 @@
     transform: translateX(0);
   }
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 24px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+
+  .hero {
+    padding: 60px 24px;
+    min-height: 100vh;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .about-image-wrap img {
+    height: 240px;
+  }
+
+  .about-text h2 {
+    font-size: 26px;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .testimony-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimony-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
+}

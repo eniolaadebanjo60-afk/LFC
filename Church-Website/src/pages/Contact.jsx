@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import './Contact.css';
+import { FaHouse } from 'react-icons/fa6';
+import { FaClock } from 'react-icons/fa6';
+import { FaEnvelope } from 'react-icons/fa6';
+import { FaPhone } from 'react-icons/fa6';
  
 function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
@@ -59,7 +63,7 @@ function Contact() {
  
             <div className="info-blocks">
               <div className="info-block">
-                <div className="info-block-icon">📍</div>
+                <div className="info-block-icon"><FaHouse></FaHouse></div>
                 <div>
                   <strong>Address</strong>
                   <p>Orimerunmu, Ogun State, Nigeria</p>
@@ -67,7 +71,7 @@ function Contact() {
               </div>
  
               <div className="info-block">
-                <div className="info-block-icon">🕐</div>
+                <div className="info-block-icon"><FaClock></FaClock></div>
                 <div>
                   <strong>Service Times</strong>
                   <p>Sunday Service — 8:00 AM</p>
@@ -76,7 +80,7 @@ function Contact() {
               </div>
  
               <div className="info-block">
-                <div className="info-block-icon">✉</div>
+                <div className="info-block-icon"><FaEnvelope></FaEnvelope></div>
                 <div>
                   <strong>Email Us</strong>
                   <p>livingfaithorimerunmu@gmail.com</p>
@@ -84,7 +88,7 @@ function Contact() {
               </div>
  
               <div className="info-block">
-                <div className="info-block-icon">📞</div>
+                <div className="info-block-icon"><FaPhone></FaPhone></div>
                 <div>
                   <strong>Call Us</strong>
                   <p>+234 000 000 0000</p>

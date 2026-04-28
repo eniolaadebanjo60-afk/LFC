@@ -350,13 +350,13 @@ function BlogAdmin() {
  
       <div className="admin-tabs">
         <button className={`tab-btn ${activeTab === 'blog' ? 'active' : ''}`} onClick={() => setActiveTab('blog')}>
-          ✍ Blog Posts
+          Blog Posts
         </button>
         <button className={`tab-btn ${activeTab === 'testimonies' ? 'active' : ''}`} onClick={() => setActiveTab('testimonies')}>
-          ✦ Testimonies
+          Testimonies
         </button>
         <button className={`tab-btn ${activeTab === 'videos' ? 'active' : ''}`} onClick={() => setActiveTab('videos')}>
-          ▶ Videos
+          Videos
         </button>
       </div>
  

@@ -312,4 +312,34 @@ newsletter-page {
   to   { opacity: 1; transform: translateX(0); }
 }
  
- 
+@media (max-width: 768px) {
+  .newsletter-hero {
+    padding: 80px 24px 60px;
+  }
+
+  .newsletter-hero-inner h1 {
+    font-size: 34px;
+  }
+
+  .newsletter-main {
+    padding: 60px 24px;
+  }
+
+  .newsletter-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .newsletter-form {
+    padding: 28px 20px;
+  }
+
+  .newsletter-strip {
+    padding: 40px 24px;
+  }
+
+  .strip-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

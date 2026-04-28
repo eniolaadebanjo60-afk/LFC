@@ -2,3 +2,9 @@
     text-align: center;
     padding: 40px;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 24px 16px;
+  }
+}

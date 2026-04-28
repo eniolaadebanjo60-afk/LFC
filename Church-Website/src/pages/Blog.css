@@ -333,4 +333,53 @@ blog-page {
   to   { opacity: 1; transform: translateY(0); }
 }
  
- 
+@media (max-width: 768px) {
+  .blog-hero {
+    padding: 80px 24px 60px;
+  }
+
+  .blog-hero::after {
+    left: 24px;
+  }
+
+  .blog-hero-inner h1 {
+    font-size: 34px;
+  }
+
+  .blog-featured {
+    padding: 60px 24px;
+  }
+
+  .featured-inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .featured-image {
+    min-height: 240px;
+  }
+
+  .featured-image-placeholder {
+    min-height: 240px;
+  }
+
+  .featured-content h2 {
+    font-size: 24px;
+  }
+
+  .blog-grid-section {
+    padding: 60px 24px;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-cta {
+    padding: 60px 24px;
+  }
+
+  .blog-cta h2 {
+    font-size: 28px;
+  }
+}

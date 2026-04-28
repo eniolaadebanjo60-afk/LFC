@@ -415,3 +415,32 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
+@media (max-width: 768px) {
+  .login-box {
+    padding: 36px 24px;
+    margin: 0 16px;
+  }
+
+  .admin-header {
+    padding: 24px 20px;
+  }
+
+  .admin-header h1 {
+    font-size: 22px;
+  }
+
+  .admin-tabs {
+    padding: 0 20px;
+    overflow-x: auto;
+  }
+
+  .tab-btn {
+    padding: 14px 16px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .admin-section {
+    margin: 20px 16px 0;
+  }
+}  

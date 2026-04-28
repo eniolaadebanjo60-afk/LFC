@@ -1,6 +1,8 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
 import aboutImg from './mychurch.jpg'
+import { FaClock } from 'react-icons/fa6';
+import { FaChurch } from 'react-icons/fa6';
  
 function Home() {
   return (
@@ -46,12 +48,12 @@ function Home() {
         <h2>Service Times</h2>
         <div className="service-cards">
           <div className="service-card">
-            <div className="service-icon">&#9788;</div>
+            <div className="service-icon"><FaClock></FaClock></div>
             <strong>Sunday Service</strong>
             <span>8:00 AM</span>
           </div>
           <div className="service-card">
-            <div className="service-icon">&#9788;</div>
+            <div className="service-icon"><FaChurch></FaChurch></div>
             <strong>Midweek Service</strong>
             <span>Wednesday 5:00 PM</span>
           </div>

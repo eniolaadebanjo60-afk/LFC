@@ -327,6 +327,77 @@ blog-page {
 .blog-btn-white:hover {
   opacity: 0.88;
 }
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+ 
+.card-image {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+ 
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+ 
+.blog-card:hover .card-image img {
+  transform: scale(1.04);
+}
+ 
+.card-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #111;
+}
+ 
+.card-category-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #E32636;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+ 
+.post-body-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: block;
+}
+ 
+.post-body {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+  animation: fadeSlideUp 0.5s ease both;
+}
+ 
+.post-body p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
  
 @keyframes fadeSlideUp {
   from { opacity: 0; transform: translateY(60px); }

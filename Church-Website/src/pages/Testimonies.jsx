@@ -137,11 +137,11 @@ function Testimonies() {
                 of your testimony, and what God did for you.
               </p>
               <a
-                href="mailto:livingfaithorimerunmu@gmail.com?subject=My Testimony&body=Name: %0ACategory: %0AMyTestimony: "
+                href="mailto:eniolaadebanjo60@gmail.com?subject=My Testimony&body=Name: %0ACategory: %0AMyTestimony: "
                 className="share-email-btn"
               >
                 <span className="email-icon">✉</span>
-                livingfaithorimerunmu@gmail.com
+                eniolaadebanjo60@gmail.com
               </a>
               <p className="share-note">
                 Selected testimonies will be featured on this page and

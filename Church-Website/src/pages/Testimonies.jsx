@@ -1,5 +1,6 @@
 import './Testimonies.css';
 import { useState } from 'react';
+import { FaEnvelope } from 'react-icons/fa6';
  
 const testimonies = [
   {
@@ -129,7 +130,7 @@ function Testimonies() {
           </div>
           <div className="share-right">
             <div className="share-card">
-              <div className="share-card-icon">✉</div>
+              <div className="share-card-icon"><FaEnvelope></FaEnvelope></div>
               <h3>Send Your Testimony</h3>
               <p>
                 Write your testimony and send it to us. Include your name
@@ -138,10 +139,9 @@ function Testimonies() {
               </p>
               <a
                 href="mailto:eniolaadebanjo60@gmail.com?subject=My Testimony&body=Name: %0ACategory: %0AMyTestimony: "
-                className="share-email-btn"
-              >
-                <span className="email-icon">✉</span>
-                eniolaadebanjo60@gmail.com
+                className="share-email-btn">   
+                  <FaEnvelope></FaEnvelope> 
+                  <span className='email-text'>eniolaadebanjo60@gmail.com</span>
               </a>
               <p className="share-note">
                 Selected testimonies will be featured on this page and

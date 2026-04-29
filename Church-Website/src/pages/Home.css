@@ -98,7 +98,7 @@
 }
 
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('church.jpg');
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('church.jpg');
   background-position: center;
   background-size: cover;
   min-height: 92vh;
@@ -110,10 +110,15 @@
   padding: 60px 40px;
   position: relative;
 }
- 
+.hero > img {
+  animation: dropIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  margin-bottom: 10px;
+}
+
 .hero-inner {
   max-width: 700px;
   animation: fadeSlideUp 1s ease forwards;
+  margin-top: 30px;
 }
 .hero-inner h1 span{
   color: #E32636;
@@ -167,6 +172,7 @@
 .about-image-wrap {
   flex: 1;
   min-width: 280px;
+  animation: fadeSlideLeft 1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
 }
  
 .about-image-wrap img {
@@ -175,6 +181,7 @@
   object-fit: cover;
   border-radius: 10px;
   display: block;
+  animation: imageReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
 }
  
 .about-text {
@@ -356,6 +363,29 @@
   margin-bottom: 32px;
   line-height: 1.7;
 }
+
+@keyframes dropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-60px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes imageReveal {
+  from {
+    opacity: 0;
+    transform: translateX(-80px) scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
 @keyframes fadeSlideUp {
   from {
     opacity: 0;

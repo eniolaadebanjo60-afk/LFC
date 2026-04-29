@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./Navbar.css";
+import logoImg from './Orims.png'
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,7 +9,10 @@ function Navbar() {
   return (
     <nav>
         <div className="navbar">
-            <NavLink to='/'><h2>LFC ORIMERUNMU</h2></NavLink>
+            <div className="nav">
+              <img src={logoImg} width='50px' height='50px'/>
+              <NavLink to='/'><h2>LFC ORIMERUNMU</h2></NavLink>
+            </div>
 
             <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                 <span></span>

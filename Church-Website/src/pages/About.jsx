@@ -1,5 +1,6 @@
 import './About.css';
 import churchImg from './church.jpg'
+import logoImg from './Orims.png'
  
 function About() {
   return (
@@ -7,9 +8,12 @@ function About() {
  
       <section className="about-hero">
         <div className="about-hero-inner">
-          <span className="about-label">Who We Are</span>
-          <h1>Living Faith Church<br />Orimerunmu</h1>
-          <p>A Place of Open Doors and Divine Opportunities</p>
+          <img src={logoImg} width='100px' height='100px'/>
+          <div className='about-hero-text'>
+            <span className="about-label">Who We Are</span>
+            <h1>Living Faith Church<br />Orimerunmu</h1>
+            <p>A Place of Open Doors and Divine Opportunities</p>
+          </div>
         </div>
         <div className="about-hero-bar"></div>
       </section>

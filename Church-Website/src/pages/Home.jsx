@@ -1,6 +1,7 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
 import aboutImg from './mychurch.jpg'
+import logoImg from './Orims.png'
 import { FaClock } from 'react-icons/fa6';
 import { FaChurch } from 'react-icons/fa6';
  
@@ -8,6 +9,7 @@ function Home() {
   return (
     <div className="home">
       <section className="hero">
+        <img src={logoImg} width='100px' height='100px'/>
         <div className="hero-inner">
           <span className="hero-tag">Welcome to Our Church</span>
           <h1>Living Faith Church <span><br />Orimerunmu</span> </h1>

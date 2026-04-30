@@ -1,8 +1,8 @@
 import './Testimonies.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaEnvelope } from 'react-icons/fa6';
- 
-const testimonies = [
+
+const defaultTestimonies = [
   {
     id: 1,
     name: "Sister Blessing Adeyemi",
@@ -46,20 +46,30 @@ const testimonies = [
     date: "December 2024",
   },
 ];
- 
+
 const categories = ["All", "Healing", "Financial Breakthrough", "Family Restoration", "Academic Success", "Salvation", "Divine Protection"];
- 
- 
+
 function Testimonies() {
   const [activeCategory, setActiveCategory] = useState("All");
- 
+  const [testimonies, setTestimonies] = useState([]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('lfc_testimonies');
+    if (saved) {
+      setTestimonies(JSON.parse(saved));
+    } else {
+      setTestimonies(defaultTestimonies);
+      localStorage.setItem('lfc_testimonies', JSON.stringify(defaultTestimonies));
+    }
+  }, []);
+
   const filtered = activeCategory === "All"
     ? testimonies
     : testimonies.filter((t) => t.category === activeCategory);
- 
+
   return (
     <div className="testimonies-page">
- 
+
       <section className="testimonies-hero">
         <div className="testimonies-hero-inner">
           <span className="testimonies-label">To God Be The Glory</span>
@@ -71,7 +81,7 @@ function Testimonies() {
         </div>
         <div className="hero-bottom-bar"></div>
       </section>
- 
+
       <section className="testimonies-filter">
         <div className="filter-inner">
           {categories.map((cat) => (
@@ -85,34 +95,40 @@ function Testimonies() {
           ))}
         </div>
       </section>
- 
+
       <section className="testimonies-grid-section">
         <div className="testimonies-grid">
-          {filtered.map((testimony, i) => (
-            <div
-              className="testimony-card"
-              key={testimony.id}
-              style={{ animationDelay: `${i * 0.1}s` }}
-            >
-              <div className="card-top">
-                <span className="testimony-category">{testimony.category}</span>
-                <div className="quote-icon">"</div>
-              </div>
-              <p className="testimony-text">{testimony.text}</p>
-              <div className="testimony-footer">
-                <div className="testimony-avatar">
-                  {testimony.name === "Anonymous" ? "?" : testimony.name.charAt(testimony.name.indexOf(" ") + 1)}
+          {filtered.length === 0 ? (
+            <p style={{ color: '#999', textAlign: 'center', width: '100%' }}>
+              No testimonies in this category yet.
+            </p>
+          ) : (
+            filtered.map((testimony, i) => (
+              <div
+                className="testimony-card"
+                key={testimony.id}
+                style={{ animationDelay: `${i * 0.1}s` }}
+              >
+                <div className="card-top">
+                  <span className="testimony-category">{testimony.category}</span>
+                  <div className="quote-icon">"</div>
                 </div>
-                <div>
-                  <strong>{testimony.name}</strong>
-                  <span>{testimony.date}</span>
+                <p className="testimony-text">{testimony.text}</p>
+                <div className="testimony-footer">
+                  <div className="testimony-avatar">
+                    {testimony.name === "Anonymous" ? "?" : testimony.name.charAt(testimony.name.indexOf(" ") + 1)}
+                  </div>
+                  <div>
+                    <strong>{testimony.name}</strong>
+                    <span>{testimony.date}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))
+          )}
         </div>
       </section>
- 
+
       <section className="testimonies-share">
         <div className="share-inner">
           <div className="share-left">
@@ -130,7 +146,7 @@ function Testimonies() {
           </div>
           <div className="share-right">
             <div className="share-card">
-              <div className="share-card-icon"><FaEnvelope></FaEnvelope></div>
+              <div className="share-card-icon"><FaEnvelope /></div>
               <h3>Send Your Testimony</h3>
               <p>
                 Write your testimony and send it to us. Include your name
@@ -139,9 +155,9 @@ function Testimonies() {
               </p>
               <a
                 href="mailto:eniolaadebanjo60@gmail.com?subject=My Testimony&body=Name: %0ACategory: %0AMyTestimony: "
-                className="share-email-btn">   
-                  <FaEnvelope></FaEnvelope> 
-                  <span className='email-text'>eniolaadebanjo60@gmail.com</span>
+                className="share-email-btn">
+                <FaEnvelope />
+                <span className='email-text'>eniolaadebanjo60@gmail.com</span>
               </a>
               <p className="share-note">
                 Selected testimonies will be featured on this page and
@@ -151,7 +167,7 @@ function Testimonies() {
           </div>
         </div>
       </section>
- 
+
       <section className="testimonies-cta">
         <h2>Come and Create Your Own Testimony</h2>
         <p>Join us this Sunday and experience God for yourself.</p>
@@ -159,10 +175,9 @@ function Testimonies() {
           <button className="testimonies-btn-white">Plan Your Visit</button>
         </a>
       </section>
- 
+
     </div>
   );
 }
- 
+
 export default Testimonies;
- 

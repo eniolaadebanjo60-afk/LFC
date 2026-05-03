@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./Navbar.css";
-import logoImg from './Orims.png'
+import logoImg from './Orims.png';
+import { FaHandHoldingDollar } from "react-icons/fa6";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,6 +27,7 @@ function Navbar() {
                 <NavLink to="/blog" onClick={() => setMenuOpen(false)}>Blog</NavLink>
                 <NavLink to="/testimonies" onClick={() => setMenuOpen(false)}>Testimonies</NavLink>
                 <NavLink to="/newsletter" onClick={() => setMenuOpen(false)}>Newsletter</NavLink>
+                <NavLink to="/give" onClick={() => setMenuOpen(false)}><FaHandHoldingDollar /></NavLink>
                 <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink>
             </div>
         </div>

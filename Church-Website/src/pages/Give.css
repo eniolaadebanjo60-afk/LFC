@@ -1,0 +1,370 @@
+
+.give-page {
+  color: #111;
+  overflow-x: hidden;
+}
+
+.give-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #E32636;
+  margin-bottom: 12px;
+}
+
+.give-label.centered {
+  text-align: center;
+}
+
+.give-hero {
+  background: #111;
+  padding: 110px 60px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.give-hero::before {
+  content: 'â‚¦';
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  font-size: 280px;
+  color: rgba(227, 38, 54, 0.06);
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.give-hero-inner {
+  max-width: 650px;
+  animation: fadeSlideUp 1s ease both;
+}
+
+.give-hero-inner h1 {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.give-hero-inner p {
+  color: #aaa;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.give-why {
+  background: #E32636;
+  padding: 70px 60px;
+}
+
+.give-why-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeSlideUp 1s ease both;
+}
+
+.give-why-inner blockquote {
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.give-why-inner cite {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+.give-categories {
+  background: #F5F5F5;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.give-categories h2 {
+  font-size: 34px;
+  color: #111;
+  margin-bottom: 40px;
+}
+
+.categories-grid {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.category-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-bottom: 4px solid #E32636;
+  border-radius: 10px;
+  padding: 30px 24px;
+  flex: 1;
+  min-width: 180px;
+  max-width: 220px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  animation: fadeSlideUp 0.8s ease both;
+}
+
+.category-card:nth-child(2) { animation-delay: 0.1s; }
+.category-card:nth-child(3) { animation-delay: 0.2s; }
+.category-card:nth-child(4) { animation-delay: 0.3s; }
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.category-card strong {
+  display: block;
+  font-size: 15px;
+  color: #111;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.category-card p {
+  font-size: 13px;
+  color: #888;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.give-bank-section {
+  background: #fff;
+  padding: 90px 60px;
+}
+
+.give-bank-inner {
+  display: flex;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.give-bank-text {
+  flex: 1;
+  min-width: 280px;
+  animation: fadeSlideLeft 1s ease both;
+}
+
+.give-bank-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.give-bank-text > p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.85;
+  margin-bottom: 36px;
+}
+
+.bank-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bank-step {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.step-number {
+  width: 36px;
+  height: 36px;
+  background: #E32636;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bank-step p {
+  font-size: 15px;
+  color: #444;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.give-bank-cards {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeSlideRight 1s ease both;
+}
+
+.bank-card {
+  background: #111;
+  border-radius: 12px;
+  padding: 28px;
+  border-top: 4px solid #E32636;
+}
+
+.bank-top {
+  margin-bottom: 12px;
+}
+
+.bank-name {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #E32636;
+}
+
+.bank-account-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.bank-number-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bank-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+.copy-btn {
+  background: #E32636;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.copy-btn:hover {
+  background: #B71C2A;
+}
+
+.bank-note {
+  display: flex;
+  gap: 16px;
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.note-bar {
+  width: 4px;
+  background: #E32636;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.bank-note p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
+  font-style: italic;
+}
+
+.give-cta {
+  background: #E32636;
+  padding: 90px 60px;
+  text-align: center;
+  animation: fadeSlideUp 1s ease both;
+}
+
+.give-cta h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.give-cta p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 17px;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.give-btn-white {
+  background: #fff;
+  color: #E32636;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.give-btn-white:hover {
+  opacity: 0.88;
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(60px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlideLeft {
+  from { opacity: 0; transform: translateX(-80px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeSlideRight {
+  from { opacity: 0; transform: translateX(80px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@media (max-width: 768px) {
+  .give-hero { padding: 80px 24px 60px; }
+  .give-hero-inner h1 { font-size: 34px; }
+  .give-hero::before { font-size: 150px; right: 10px; }
+  .give-why { padding: 50px 24px; }
+  .give-why-inner blockquote { font-size: 18px; }
+  .give-categories { padding: 60px 24px; }
+  .category-card { max-width: 100%; }
+  .give-bank-section { padding: 60px 24px; }
+  .give-bank-inner { flex-direction: column; gap: 40px; }
+  .give-cta { padding: 60px 24px; }
+  .give-cta h2 { font-size: 28px; }
+}

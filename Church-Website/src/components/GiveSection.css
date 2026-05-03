@@ -1,0 +1,132 @@
+.give-section {
+  background: #111;
+  padding: 90px 60px;
+}
+
+.give-section-inner {
+  display: flex;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: fadeSlideUp 1s ease both;
+}
+
+.give-section-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #E32636;
+  margin-bottom: 12px;
+}
+
+.give-section-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.give-section-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.give-section-text p {
+  font-size: 16px;
+  color: #aaa;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.give-section-text blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: #E32636;
+  font-style: italic;
+  border-left: 3px solid #E32636;
+  padding-left: 16px;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.give-section-btn {
+  background: #E32636;
+  color: #fff;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.give-section-btn:hover {
+  background: #B71C2A;
+}
+
+.give-section-cards {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.give-mini-card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-top: 4px solid #E32636;
+  border-radius: 10px;
+  padding: 24px 28px;
+  transition: transform 0.2s ease;
+}
+
+.give-mini-card:hover {
+  transform: translateY(-4px);
+}
+
+.mini-card-icon {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.give-mini-card strong {
+  display: block;
+  font-size: 13px;
+  color: #E32636;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.give-mini-card p {
+  font-size: 13px;
+  color: #aaa;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.mini-account {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(60px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .give-section { padding: 60px 24px; }
+  .give-section-inner { flex-direction: column; gap: 40px; }
+  .give-section-text h2 { font-size: 28px; }
+}
